@@ -1,11 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>False Hero Wiki</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Wiki</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>False Hero Wiki</h1>
+
+  <header class="wiki-header">
+    <a href="index.html">
+      <img src="Assets/MainMenuLogoV2.png" alt="Game Logo" class="wiki-logo">
+    </a>
+
+    <div class="line-divider-h"></div>
+    
+    <nav class="wiki-nav">
+      <a href="index.html" class="wiki-btn active">Home</a>
+      <a href="template.html" class="wiki-btn">Template</a>
+      <a href="#equipment" class="wiki-btn">Equipment</a>
+      <span class="wiki-btn locked">Secret Bosses</span>
+    </nav>
+    
+    <div class="line-divider-h"></div>
+  </header>
+
+  <p class="wiki-intro">
+    Comprehensive database for game stats, items, equipment, and boss strategies.
+  </p>
+
+  <main class="category-grid">
+    <a href="template.html" class="category-card">
+      <h3>Weapons</h3>
+      <p>Attack stats, scaling, and upgrade paths.</p>
+    </a>
+
+    <a href="template.html" class="category-card">
+      <h3>Armor</h3>
+      <p>Defense sets, resistances, and bonuses.</p>
+    </a>
+
+    <a href="template.html" class="category-card">
+      <h3>Bosses</h3>
+      <p>Attack patterns, weaknesses, and loot drops.</p>
+    </a>
+
+    <a href="template.html" class="category-card">
+      <h3>Items</h3>
+      <p>Consumables, drop locations, and materials.</p>
+    </a>
+  </main>
+
 </body>
 </html>
