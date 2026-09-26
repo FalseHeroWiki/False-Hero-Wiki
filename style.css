@@ -340,9 +340,10 @@ a {
 /* Item / Boss Banner Card */
 .item-card {
   position: relative;
-  width: 509px;
-  height: 108px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 509px;
+  aspect-ratio: 509 / 108;
+  height: auto;
   background-image: url('Assets/UpgradeButton_Default.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -351,8 +352,8 @@ a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding-left: 32px;
-  padding-right: 110px;
+  padding-left: 6%;
+  padding-right: 22%;
   transition: transform 0.08s ease, filter 0.08s ease;
   user-select: none;
 }
@@ -372,7 +373,7 @@ a {
 
 /* Left Item Name */
 .item-name {
-  font-size: 28px;
+  font-size: clamp(16px, 4.8vw, 28px);
   color: #f5eed6;
   text-shadow: 2px 2px 4px #000;
   white-space: nowrap;
@@ -389,11 +390,11 @@ a {
 /* Right Circular Picture Socket */
 .item-circle-socket {
   position: absolute;
-  right: 17px;
+  right: 3.3%;
   top: 50%;
   transform: translateY(-50%);
-  width: 74px;
-  height: 74px;
+  width: 14.5%;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   overflow: hidden;
   display: flex;
